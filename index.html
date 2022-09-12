@@ -9,7 +9,41 @@
     <title>Frontend Portfolio Project</title>
   </head>
   <body>
-    <h1>Discover Poems</h1>
-    <h5>Mina Grullon</h5>
+    <header class="header">
+      <h1><em>Discover Poems</em></h1>
+      <br />
+      <h3>by Mina Grullon</h3>
+    </header>
+    <div class="inputSection">
+      <form class="search">
+        <label for="poetName">Search a poet's catalog: </label>
+        <input
+          class="poetName"
+          type="text"
+          name="poetName"
+          placeholder="Enter a poet's name"
+          required
+        />
+
+        <input
+          type="submit"
+          name="toSubmit"
+          class="submitButton"
+          value="Search"
+        />
+      </form>
+      <form class="random">
+        <label for="randomPoem">Get a random poem!</label>
+        <input type="submit" name="randomPoem" value="Discover" />
+      </form>
+    </div>
+    <main>
+      <h4><em>View the list of poets</em></h4>
+      <div class="container">
+        <p></p>
+        <p></p>
+        <p></p>
+      </div>
+    </main>
   </body>
 </html>

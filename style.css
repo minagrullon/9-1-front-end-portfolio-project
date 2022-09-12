@@ -1,4 +1,59 @@
 * {
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-family: monospace;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+body {
+  /* background-image: url("") */
+}
+
+.header {
+  background-color: rgb(236, 213, 232);
+  color: rgb(253, 194, 57);
+  font-weight: bold;
+  text-align: center;
+  padding: 40px;
+  border-radius: 15px;
+  margin: 10px;
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ53OzE4mdgyjmOugPXHWJhNTjDF2vt2lHt8Q&usqp=CAU");
+  /* background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZkrvZj85aHOgmq9Ggv3eKbCr1dk-kru3QQA&usqp=CAU"); */
+}
+
+.inputSection {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+form {
+  line-height: 1.3;
+  background-color: rgb(251, 237, 219);
+  padding: 8px;
+  text-align: center;
+  margin: 10px;
+  border-radius: 15px;
+  border: 5px dotted rgb(216, 167, 175);
+}
+
+.poetName {
+  padding-left: 10px;
+  padding-right: 5px;
+}
+
+article {
+  margin: 30px;
+}
+
+h4 {
+  margin: 20px;
+  text-decoration: double;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  margin: 15px;
+  border: 3px rgb(153, 79, 79) dotted;
+  border-radius: 20px;
+  background-color: rgb(255, 248, 236);
 }
