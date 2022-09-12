@@ -9,6 +9,7 @@ body {
 }
 
 .header {
+  font-size: 160%;
   background-color: rgb(236, 213, 232);
   color: rgb(253, 194, 57);
   font-weight: bold;
@@ -60,7 +61,6 @@ form {
 }
 
 .submitButton {
-  /* text-align: right; */
   margin: 7px;
   padding-left: 8px;
   width: 50%;
@@ -93,4 +93,8 @@ h4 {
   border: 5px dotted rgb(153, 79, 79);
   border-radius: 15px;
   background-color: rgb(246, 238, 223);
+}
+
+.randomLink:hover {
+  background-color: rgb(233, 200, 128);
 }
