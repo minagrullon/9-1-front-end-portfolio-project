@@ -5,7 +5,7 @@
 }
 
 body {
-  /* background-image: url("") */
+  background-color: rgb(229, 223, 249);
 }
 
 .header {
@@ -23,9 +23,14 @@ body {
 .inputSection {
   display: grid;
   grid-template-columns: 2fr 1fr;
+  column-gap: 80px;
+  /* margin: 10px; */
+  padding: 0px;
 }
 
 form {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   line-height: 1.3;
   background-color: rgb(251, 237, 219);
   padding: 8px;
@@ -35,9 +40,41 @@ form {
   border: 5px dotted rgb(216, 167, 175);
 }
 
+.random {
+  line-height: 1.3;
+  background-color: rgb(148, 231, 254);
+  padding: 8px;
+  text-align: center;
+  margin: 10px;
+  width: 60%;
+  border-radius: 50%;
+  border: 5px dotted rgb(216, 167, 175);
+}
+
+.poetName {
+  margin: 7px;
+}
+
+.poetName:hover {
+  background-color: rgb(237, 237, 182);
+}
+
+.submitButton {
+  /* text-align: right; */
+  margin: 7px;
+  padding-left: 8px;
+  width: 50%;
+  /* margin-right: 8px; */
+}
+
+.submitButton:hover {
+  background-color: rgb(118, 92, 160);
+  color: white;
+}
+
 .poetName {
   padding-left: 10px;
-  padding-right: 5px;
+  padding-right: 10px;
 }
 
 article {
@@ -52,8 +89,8 @@ h4 {
 .container {
   display: grid;
   grid-template-columns: 2fr 1fr;
-  margin: 15px;
-  border: 3px rgb(153, 79, 79) dotted;
-  border-radius: 20px;
-  background-color: rgb(255, 248, 236);
+  margin: 10px;
+  border: 5px dotted rgb(153, 79, 79);
+  border-radius: 15px;
+  background-color: rgb(246, 238, 223);
 }
