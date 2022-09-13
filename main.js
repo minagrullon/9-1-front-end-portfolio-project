@@ -1,4 +1,5 @@
 const input = document.querySelector(".poetName");
+const form = document.querySelector("form");
 const container = document.querySelector(".container");
 const divMain = document.querySelector("main div");
 
@@ -8,7 +9,6 @@ fetch(URL)
   .then((data) => data.json())
   .then((data) => {
     for (let i = 0; i < data.authors.length; i++) {
-      //   console.log(data.authors);
       let ul = document.createElement("ul");
       divMain.append(ul);
       let li = document.createElement("li");
@@ -18,3 +18,5 @@ fetch(URL)
     }
   })
   .catch((err) => console.log(err));
+
+form.addEventListener("submit", (e) => {});

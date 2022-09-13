@@ -6,6 +6,9 @@
 
 body {
   background-color: rgb(229, 223, 249);
+
+  /* background-image: url("https://img2.goodfon.com/wallpaper/nbig/9/9b/texture-lines-colors-pattern.jpg"); */
+
   background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ53OzE4mdgyjmOugPXHWJhNTjDF2vt2lHt8Q&usqp=CAU");
 }
 
@@ -14,7 +17,7 @@ header {
   color: rgb(54, 32, 125);
   font-weight: bold;
   text-align: center;
-  padding: 40px;
+  /* padding: 40px; */
   border-radius: 15px;
   margin: 10px;
   border: 5px rgb(137, 155, 207) dotted;
