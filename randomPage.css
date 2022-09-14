@@ -17,6 +17,7 @@ body {
 
 header {
   background-color: rgb(218, 199, 215);
+  opacity: 0.8;
   text-shadow: 3px 2px rgb(137, 155, 207);
   color: rgb(54, 32, 125);
   font-weight: bold;
@@ -28,7 +29,33 @@ header {
 
 a {
   color: rgb(225, 225, 108);
-  font-size: 160%;
+  font-size: 120%;
+  padding: 6px;
+  position: relative;
+  text-decoration: none;
+  transition: all 1ms ease-in-out;
+  cursor: pointer;
+}
+
+a:hover {
+  color: rgb(48, 44, 35);
+}
+
+a::before {
+  content: "";
+  position: absolute;
+  background: #ed98bc;
+  border-radius: 15px;
+  inset: 0;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.5s ease-in-out;
+  z-index: -1;
+}
+
+a:hover::before {
+  transform: scaleX(1);
+  transform-origin: left;
 }
 
 main {
@@ -37,4 +64,18 @@ main {
   border: px dotted rgb(153, 79, 79);
   border-radius: 15px;
   background-color: rgb(246, 238, 223);
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: rgb(68, 68, 233);
+  border-radius: 100vw;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgb(255, 174, 0);
+  border-radius: 100vm;
 }

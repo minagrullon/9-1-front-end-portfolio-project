@@ -91,6 +91,7 @@ form {
 
 .error {
   display: none;
+  color: lightsalmon;
 }
 
 article {
@@ -138,7 +139,6 @@ footer {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: textclip 2s linear infinite;
-  /* display: inline-block; */
   font-size: 20px;
 }
 
@@ -146,4 +146,18 @@ footer {
   to {
     background-position: 200% center;
   }
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: rgb(68, 68, 233);
+  border-radius: 100vw;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgb(255, 174, 0);
+  border-radius: 100vm;
 }
