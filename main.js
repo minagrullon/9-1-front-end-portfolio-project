@@ -2,7 +2,8 @@ const input = document.querySelector(".poetName");
 const form = document.querySelector("form");
 const container = document.querySelector(".container");
 const divMain = document.querySelector("main div");
-const h4Main = document.querySelector("main h4");
+const h3Main = document.querySelector(".filler");
+const error = document.querySelector(".error");
 
 const URL = "https://poetrydb.org/author";
 
@@ -27,15 +28,23 @@ form.addEventListener("submit", (e) => {
   fetch(`${URL}/${search}`)
     .then((data) => data.json())
     .then((data) => {
-      h4Main.innerHTML = "";
-      h4Main.innerHTML = `<h2>${search}</h2>`;
+      console.log(data);
+      if (data.status && data.status === 404) {
+        error.style.display = "block";
+        error.style.color = "red";
+        error.style.fontWeight = "700";
+        return;
+      }
+
+      h3Main.innerHTML = "";
+      h3Main.innerHTML = `<h2>${search}</h2>`;
       divMain.innerHTML = "";
       const poemHolder = document.createElement("div");
       divMain.prepend(poemHolder);
       data.forEach((poem) => {
         const title = document.createElement("h3");
         title.innerHTML = `<u>Title:</u> ${poem.title}`;
-        console.log(title);
+
         const poemP = document.createElement("p");
         poemP.textContent = poem.lines;
         poemHolder.append(title, poemP);

@@ -10,12 +10,13 @@
   </head>
   <body>
     <header class="header">
-      <h1>Discover Poems</h1>
-      <h4>by Mina Grullon</h4>
+      <h1><em>Discover Poems</em></h1>
     </header>
     <div class="inputSection">
       <form class="search">
-        <label for="poetName">Search a poet's catalog: </label>
+        <label class="search" for="poetName"
+          ><em>Search a poet's catalog: </em></label
+        >
         <input
           class="poetName"
           type="text"
@@ -32,16 +33,18 @@
         />
       </form>
       <aside class="random">
-        <label for="randomPoem">Get a random poem!</label>
+        <label for="randomPoem"><em>Get a random poem!</em></label>
         <button class="randomLink" type="”button”">
           <a href="./random.html">Discover</a>
         </button>
-        <!-- <input type="submit" name="randomPoem" value="Discover" /> -->
       </aside>
     </div>
     <main>
-      <h4><em>Choose from the list of poets</em></h4>
+      <p class="error">ERROR: Must choose from the poet list provided!</p>
+      <h3 class="filler"><em>Choose from the list of poets</em></h3>
       <div class="container"></div>
     </main>
   </body>
+  <br />
+  <footer>Created by Mina Grullon 👩🏻‍💻</footer>
 </html>
