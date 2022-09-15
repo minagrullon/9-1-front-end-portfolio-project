@@ -4,8 +4,13 @@ const container = document.querySelector(".container");
 const divMain = document.querySelector("main div");
 const h3Main = document.querySelector(".filler");
 const error = document.querySelector(".error");
+const header = document.querySelector("header");
 
 const URL = "https://poetrydb.org/author";
+
+header.addEventListener("click", () => {
+  location.reload();
+});
 
 fetch(URL)
   .then((data) => data.json())

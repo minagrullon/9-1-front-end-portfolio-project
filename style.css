@@ -23,14 +23,12 @@ body {
   border-radius: 15px;
   margin: 10px;
   background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ53OzE4mdgyjmOugPXHWJhNTjDF2vt2lHt8Q&usqp=CAU");
-  /* background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZkrvZj85aHOgmq9Ggv3eKbCr1dk-kru3QQA&usqp=CAU"); */
 }
 
 .inputSection {
   display: grid;
   grid-template-columns: 2fr 1fr;
   column-gap: 80px;
-  /* margin: 10px; */
   padding: 0px;
 }
 
@@ -73,10 +71,12 @@ form {
   margin: 7px;
   padding-left: 8px;
   width: 50%;
+  border-radius: 7px;
+  background-color: rgb(216, 167, 175);
 }
 
 .submitButton:hover {
-  background-color: rgb(118, 92, 160);
+  background-color: rgb(81, 61, 112);
   color: white;
 }
 
@@ -109,12 +109,21 @@ h4 {
   margin: 10px;
   border: 2px dotted rgb(153, 79, 79);
   border-radius: 15px;
-
   background-color: rgb(246, 238, 223);
 }
 
+.randomLink {
+  background-color: rgb(216, 167, 175);
+  border-radius: 7px;
+}
+
 .randomLink:hover {
-  background-color: rgb(233, 200, 128);
+  background-color: rgb(236, 201, 126);
+}
+
+a {
+  color: black;
+  text-decoration: none;
 }
 
 footer {
@@ -161,4 +170,37 @@ footer {
 ::-webkit-scrollbar-thumb {
   background-color: rgb(255, 174, 0);
   border-radius: 100vm;
+}
+
+@media (min-width: 300px) and (max-width: 750px) {
+  .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 5px;
+    font-size: 80%;
+  }
+  .inputSection {
+    display: grid;
+    grid-template-columns: 1fr;
+    font-size: 70%;
+  }
+  .header {
+    text-shadow: 6px 9px #1c1919;
+    font-size: 90%;
+    padding: 15px;
+  }
+  .randomLink {
+    font-size: 70%;
+  }
+  .submitButton {
+    font-size: 70%;
+    margin: 5px;
+    width: 100%;
+  }
+  footer {
+    font-size: 70%;
+  }
+  form {
+    margin: 5px;
+  }
 }

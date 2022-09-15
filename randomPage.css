@@ -10,8 +10,6 @@ body {
   padding: 6px;
   background-color: rgb(229, 223, 249);
 
-  /* background-image: url("https://img2.goodfon.com/wallpaper/nbig/9/9b/texture-lines-colors-pattern.jpg"); */
-
   background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ53OzE4mdgyjmOugPXHWJhNTjDF2vt2lHt8Q&usqp=CAU");
 }
 
@@ -78,4 +76,26 @@ main {
 ::-webkit-scrollbar-thumb {
   background-color: rgb(255, 174, 0);
   border-radius: 100vm;
+}
+
+.random {
+  margin: 5px;
+  background-color: rgb(54, 32, 125);
+  color: white;
+  font-weight: bold;
+  border-radius: 6px;
+  line-height: 1.7;
+}
+
+.random:hover {
+  background-color: rgb(128, 40, 211);
+}
+
+@media (min-width: 300px) and (max-width: 500px) {
+  header {
+    width: 70%;
+    margin: auto;
+    background-color: rgb(119, 176, 223);
+    opacity: 0.7;
+  }
 }

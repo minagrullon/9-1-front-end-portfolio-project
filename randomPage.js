@@ -1,4 +1,5 @@
 const main = document.querySelector("main");
+const button = document.querySelector(".random");
 
 const URL = "https://poetrydb.org/random";
 
@@ -19,3 +20,7 @@ fetch(URL)
     }
   })
   .catch((err) => console.log(err));
+
+button.addEventListener("click", () => {
+  location.reload();
+});
