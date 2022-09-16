@@ -8,7 +8,7 @@
 }
 
 body {
-  background-color: #231557;
+  background-color: #231a46;
 }
 
 .header {
@@ -132,7 +132,6 @@ footer {
 }
 
 footer {
-  text-transform: uppercase;
   background-image: linear-gradient(
     -225deg,
     #7154d9 0%,
@@ -149,7 +148,7 @@ footer {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: textclip 2s linear infinite;
-  font-size: 20px;
+  font-size: 14px;
 }
 
 @keyframes textclip {
@@ -163,12 +162,12 @@ footer {
 }
 
 ::-webkit-scrollbar-track {
-  background-color: rgb(68, 68, 233);
+  background-color: rgb(100, 100, 171);
   border-radius: 100vw;
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: rgb(255, 174, 0);
+  background-color: rgb(223, 175, 71);
   border-radius: 100vm;
 }
 
@@ -197,9 +196,7 @@ footer {
     margin: 5px;
     width: 100%;
   }
-  footer {
-    font-size: 70%;
-  }
+
   form {
     margin: 5px;
   }

@@ -20,10 +20,10 @@ fetch(URL)
       divMain.append(ul);
       let li = document.createElement("li");
       li.textContent = data.authors[i];
-
       ul.append(li);
     }
   })
+
   .catch((err) => console.log(err));
 
 form.addEventListener("submit", (e) => {
@@ -57,7 +57,7 @@ form.addEventListener("submit", (e) => {
       divMain.prepend(poemHolder);
       data.forEach((poem) => {
         const title = document.createElement("h3");
-        title.innerHTML = `<u>Title:</u> ${poem.title}`;
+        title.innerHTML = `<u>Title:</u>${poem.title}`;
 
         const poemP = document.createElement("p");
         let poemContent = poem.lines;
@@ -69,7 +69,10 @@ form.addEventListener("submit", (e) => {
         console.log(content);
 
         poemP.innerText = content;
-        poemHolder.append(title, poemP);
+
+        const line = document.createElement("hr");
+
+        poemHolder.append(title, poemP, line);
       });
     })
     .catch((err) => console.log(err));
