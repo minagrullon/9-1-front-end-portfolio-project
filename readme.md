@@ -11,3 +11,6 @@ Getting started:
 - Clone this repository on your terminal.
 - Open the repository on VSCode
 - Run GoLive.
+
+Link:
+https://minagrullon.github.io/9-1-front-end-portfolio-project/
